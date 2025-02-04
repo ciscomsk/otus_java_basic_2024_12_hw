@@ -189,6 +189,7 @@ public class HwApp {
     }
 
     public static boolean checkElementsOrder(int[] arr, SortOrder order) {
+        // можно заменить if на switch
         if (order == SortOrder.ASC) {
             for (int i = 0; i < arr.length - 1; i++) {
                 if (arr[i] >= arr[i + 1]) {
